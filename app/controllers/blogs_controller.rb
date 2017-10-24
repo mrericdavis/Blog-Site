@@ -5,11 +5,11 @@ class BlogsController < ApplicationController
   end 
 
   def new
-    render "show.html.erb"
+    render "new.html.erb"
   end  
 
   def create
-    render "show.html.erb"
+    render "create.html.erb"
   end  
 
   def show
