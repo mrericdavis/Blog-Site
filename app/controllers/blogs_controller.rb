@@ -27,6 +27,5 @@ class BlogsController < ApplicationController
   def destroy
     render "index.html.erb"
   end  
-
-
 end
+
