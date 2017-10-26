@@ -1,2 +1,10 @@
 <h1> Welcome To "Bloggers"</h1>
-<%= @users %>
+<% @users.each do |user| %>
+  <ul>
+      <h1> <li><a href="/blogs/<%= user.id %>"><%= user.name%> </li> </h1>
+
+        <h2> <%= user.title %> </h2>
+
+      <li> <img src= "<%= user.photo %>" ></li>
+  </ul>
+<% end %>  

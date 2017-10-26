@@ -2,5 +2,18 @@ User.create(name: "Eric Davis", title: "Web Developer", email: "eric@email.com",
 User.create(name: "Curtis Washington", title: "Software Engineer", email: "curtis@email.com", photo: "https://images.timberland.com/is/image/timberland/10061024-HERO?$CATEGORY-LANDING-PRODUCT-REC$")
 User.create(name: "Sandi Metz", title: "Lead Developer", email: "sandi@email.com", photo: "https://images.timberland.com/is/image/timberland/10061024-HERO?$CATEGORY-LANDING-PRODUCT-REC$")
 User.create(name: "China Valdez", title: "Lead Recruiter", email: "china@email.com", photo: "https://images.timberland.com/is/image/timberland/10061024-HERO?$CATEGORY-LANDING-PRODUCT-REC$")
+
+Post.create(title: "My Life", body: "My life is great, I am so blessed", user_id: 1)
+Post.create(title: "Kids", body: "My babies are so messy", user_id: 1)
+Post.create(title: "BORING", body: "My life is boring, I need to do something", user_id: 2)
+Post.create(title: "My school", body: "My School is great, I love it here", user_id: 3)
+Post.create(title: "Bigger House", body: "I need a bigger house", user_id: 4)
+
+Comment.create(body: "you are blessed", user_id: 4, post_id: 1)
+Comment.create(body: "Reading books will help", user_id: 3, post_id: 2)
+Comment.create(body: "Let me know if you need a babysitter", user_id: 1, post_id: 2)
+Comment.create(body: "God is Good", user_id: 3, post_id: 1)
+Comment.create(body: "you want to go out tonight", user_id: 2, post_id: 3)
+Comment.create(body: "I need a bigger house too", user_id: 3, post_id: 5)
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
